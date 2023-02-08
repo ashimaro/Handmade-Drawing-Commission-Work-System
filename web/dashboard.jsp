@@ -90,7 +90,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="product-bit-title text-center">
-                        <h2>Order A Handmade Drawing Now</h2>
+                        <h2>Order Now!</h2>
                     </div>
                 </div>
             </div>
