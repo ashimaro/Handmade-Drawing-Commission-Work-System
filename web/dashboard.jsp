@@ -111,9 +111,7 @@
                     for (commissionWork commissionWork : listcommissionwork) {
                        user = userDAO.retrieveUserByUserId(commissionWork.getArtistId());
                        User activeUser = (User) request.getSession().getAttribute("user");
-                       
-                       
-                %>
+                 %>
 
                 <div class="bg-gray-100 rounded-3xl overflow-hidden shadow-lg">
                     <div class="px-6 py-4 text-center w-full">
