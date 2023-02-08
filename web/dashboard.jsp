@@ -58,7 +58,7 @@
                     <div class="logo">
                         <h1></h1>
                         <center><img src="img/HDCWLogo.png" class="centerImage" alt="Logo" height="80" width="80" href="dashboard.jsp"></center>
-                        <center><h1><b> Handmade Drawing Commission Work </b></h1></center>
+                        <center><h1><b>Handmade Drawing Commission Work</b></h1></center>
                     </div>
                 </div>
 
@@ -90,7 +90,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="product-bit-title text-center">
-                        <h2>Order Now!</h2>
+                        <h2>Order A Handmade Drawing Now</h2>
                     </div>
                 </div>
             </div>
@@ -111,7 +111,9 @@
                     for (commissionWork commissionWork : listcommissionwork) {
                        user = userDAO.retrieveUserByUserId(commissionWork.getArtistId());
                        User activeUser = (User) request.getSession().getAttribute("user");
-                 %>
+                       
+                       
+                %>
 
                 <div class="bg-gray-100 rounded-3xl overflow-hidden shadow-lg">
                     <div class="px-6 py-4 text-center w-full">

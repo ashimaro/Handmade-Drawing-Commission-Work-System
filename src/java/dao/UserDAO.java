@@ -105,7 +105,27 @@ public class UserDAO {
                     }
                 }
             }
-          
+            /*
+            String sql = "update users set testing=? where email="+email ;
+            
+            System.out.println(sql);
+            
+            ps = con.prepareStatement(sql);
+            ps.setString(1,stra);
+
+            int i = ps.executeUpdate();
+            if(i > 0)
+            {
+               System.out.println("1");
+            }
+            else
+            {
+                System.out.println("2");
+            //ut.print("There is a problem in updating Record.");
+            } 
+               
+            }
+             */
             con.close();
 
         } catch (SQLException e) {
