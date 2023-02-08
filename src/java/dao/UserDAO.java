@@ -105,27 +105,7 @@ public class UserDAO {
                     }
                 }
             }
-            /*
-            String sql = "update users set testing=? where email="+email ;
-            
-            System.out.println(sql);
-            
-            ps = con.prepareStatement(sql);
-            ps.setString(1,stra);
-
-            int i = ps.executeUpdate();
-            if(i > 0)
-            {
-               System.out.println("1");
-            }
-            else
-            {
-                System.out.println("2");
-            //ut.print("There is a problem in updating Record.");
-            } 
-               
-            }
-             */
+          
             con.close();
 
         } catch (SQLException e) {
@@ -281,8 +261,6 @@ public class UserDAO {
 
         String myQ = "delete from users where userId=?";
 
-        //DELETE T1, T2 FROM T1 INNER JOIN T2 ON T1.key = T2.key WHERE condition;
-        //String myQ = "DELETE users,commissionwork FROM users INNER JOIN commissionwork ON users.userId = commissionwork.userId WHERE userId=?";
         try {
             PreparedStatement myPs = con.prepareStatement(myQ);
             myPs.setInt(1, user.getUserId());
